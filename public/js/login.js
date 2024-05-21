@@ -16,25 +16,19 @@ function iniciarLogin(){
 	clave = document.getElementById("clave");
 	ventana = document.querySelector("#ventana");
 	formulario = document.getElementById("formulario");
-	formulario.addEventListener("submit",procesarLogin);
+	formulario.addEventListener("submit", procesarLogin);
 	btn_cerrar_modal.addEventListener("click",cerrarVentana);
 	nube = new Nube();
 }
 
-function abrirVentana(){
-	ventana.classList.remove("hidden");
-}
-
 function cerrarVentana(evento){
 	//ventana.classList.add("hidden");
-	
 }
 
 async function procesarLogin(evento){
 
-	
 	evento.preventDefault();
-	const response = await nube.register(correo.value, clave.value);
+	const response = await nube.login(correo.value,clave.value);
 	if (!response.error) {
 		alert("Usuario registrado con éxito");
 		location.href = "index.html";

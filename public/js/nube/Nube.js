@@ -1,11 +1,11 @@
 
-/* import { initializeApp } from "firebase/app"
+import { initializeApp } from "firebase/app"
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
-import { getFirestore, collection, addDoc } from "firebase/firestore"; */
+/* import { getFirestore, collection, addDoc } from "firebase/firestore"; */
 
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js'
+/* import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js'
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js'
-
+ */
 
 class Nube {
   constructor() {
