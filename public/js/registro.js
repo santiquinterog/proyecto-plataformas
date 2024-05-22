@@ -33,7 +33,7 @@ async function procesarRegistro(evento){
 		location.href = "index.html";
 	}
 	else {
-		alert("Usuario no registrado");
+		alert("Usuario no ser registrado");
 		console.error(response.msg);
 	}
 	evento.preventDefault();
